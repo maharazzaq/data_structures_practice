@@ -1,5 +1,4 @@
 #Two Sum
-
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):
@@ -14,3 +13,17 @@ class Solution:
         if string == string[::-1]:
             return True
         return False
+
+#Longest Common Prefix
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        if not strs:
+            return ""
+        test_string = strs[0]
+        i = 1
+        for strs in strs[1:]:
+            while strs[:len(test_string)] != test_string:
+                test_string = test_string[:-1]
+                if not prefix:
+                    return ""
+        return test_string
