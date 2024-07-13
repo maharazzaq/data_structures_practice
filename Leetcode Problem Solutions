@@ -14,6 +14,21 @@ class Solution:
             return True
         return False
 
+#Palindrome in Range
+def reverse_integer(num):
+	If num < 0:
+		String = str(abs(num)
+		new_string = string[::-1]  ⇒ O(n)
+		if int(new_string) < 2**31:
+			Return -int(new_string)
+else:
+		String = str(num)
+		new_string = string[::-1] ⇒ O(n)
+		if int(new_string) < 2**31 - 1: 
+			Return int(new_string)
+	return 0
+
+
 #Longest Common Prefix
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
@@ -27,3 +42,4 @@ class Solution:
                 if not prefix:
                     return ""
         return test_string
+
