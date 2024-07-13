@@ -28,6 +28,19 @@ else:
 			Return int(new_string)
 	return 0
 
+#Palindrome better solution 
+def isPalindrome(self, x):
+        def reverse_number():
+            result = 0
+            remainder = x
+
+
+            while remainder != 0: 123, 12, 1, 0 —> O(N) where n = # digit in the number
+                result *= 10 = 0, 30, 320
+                result += remainder % 10 => 3, 32, 321
+                remainder //= 10 => 12, 1, 0
+            return result => 321
+        return False if x < 0 else x == reverse_number()
 
 #Longest Common Prefix
 class Solution:
