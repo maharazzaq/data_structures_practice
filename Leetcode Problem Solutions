@@ -62,3 +62,10 @@ class Solution:
 
 
 
+def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        split_list = s.split()
+        return len(split_list[-1])
