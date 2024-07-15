@@ -69,3 +69,16 @@ def lengthOfLastWord(self, s):
         """
         split_list = s.split()
         return len(split_list[-1])
+
+class Solution(object):
+    def plusOne(self, digits):
+        """
+        :type digits: List[int]
+        :rtype: List[int]
+        """
+        string = ""
+        for num in digits:
+            string += str(num)
+        
+        incremented_number = int(string) + 1
+        return [int(digit) for digit in str(incremented_number)]
