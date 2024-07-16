@@ -82,3 +82,14 @@ class Solution(object):
         
         incremented_number = int(string) + 1
         return [int(digit) for digit in str(incremented_number)]
+
+def repeat_element(array):
+list_elements = []
+	for num in array:
+		If num in list_elements:
+			return num
+		else:
+			list_elements.append(num)
+
+	return -1
+
