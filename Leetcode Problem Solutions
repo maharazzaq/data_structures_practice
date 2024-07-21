@@ -61,7 +61,6 @@ class Solution:
 #Need to understand the function find()
 
 
-
 def lengthOfLastWord(self, s):
         """
         :type s: str
